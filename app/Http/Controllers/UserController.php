@@ -16,6 +16,8 @@ class UserController extends Controller
 if (Auth::attempt($credenctials)){
     return redirect('/');
 }
+}
+public function create (){
 
-    }
+}
 }
