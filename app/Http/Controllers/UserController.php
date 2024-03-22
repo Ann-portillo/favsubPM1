@@ -16,6 +16,7 @@ class UserController extends Controller
 if (Auth::attempt($credenctials)){
     return redirect('/');
 }
+return back () ->withErrors(['email' => 'Credenciales incorrectas', 'password'=>'Contraseña incorrecta']);
 }
 public function create (){
 
